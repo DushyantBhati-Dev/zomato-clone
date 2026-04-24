@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 95%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main0 {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.main0 video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main1 {
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main1 .logo {
+  width: 25%;
+  position: absolute;
+  top: 25%;
+  right: 35%;
+}
+.main1 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+}
+.main1 h6 {
+  word-spacing: 0.4em;
+  margin-top: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main1 .link img {
+  width: 20%;
+  margin: 2em;
+  transition: all 0.3s linear;
+}
+.main1 .link img:hover {
+  transform: scale(1.1);
+}
+.main1 .link .imgg {
+  position: relative;
+  top: 3px;
+  width: 19%;
+}
+.main1 .sc {
+  font-weight: 500;
+  font-size: 1.3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  left: 45%;
+  bottom: -5em;
+  animation: iconani 0.8s infinite linear;
+  cursor: pointer;
+}
+.main1 .sc a {
+  text-decoration: none;
+  color: white;
+}
+.main1 .sc h6:hover {
+  color: rgb(55, 255, 5);
+}
+.main1 .material-symbols-outlined {
+  position: relative;
+  top: 0.3em;
+  transition: all;
+}
+@keyframes iconani {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.main2 {
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+}
+.main2 .bu { transform: translateX(-120px); }
+.main2 .momo { transform: translateX(120px); }
+.main2 .pizza { transform: translateX(120px); }
+.main2 .tomoto { transform: translateY(80px); }
+.main2 .patti { transform: translateY(-80px); }
+.main2 .line { transform: translateX(-200px); }
+.main2 .textt1 { transform: translate(-50%, -40%); }
+.main2 .data { transform: translateY(100px); }
+
+.main2 .bu,
+.main2 .momo,
+.main2 .pizza,
+.main2 .tomoto,
+.main2 .patti,
+.main2 .line,
+.main2 .textt1,
+.main2 .data {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+/* alag-alag slide directions */
+
+
+/* jab page active ho */
+.main2.show .bu,
+.main2.show .momo,
+.main2.show .pizza,
+.main2.show .tomoto,
+.main2.show .patti,
+.main2.show .line,
+.main2.show .textt1,
+.main2.show .data {
+  opacity: 1;
+}
+
+.main2.show .bu,
+.main2.show .momo,
+.main2.show .pizza,
+.main2.show .tomoto,
+.main2.show .patti,
+.main2.show .line {
+  transform: translate(0, 0);
+}
+
+.main2.show .textt1 {
+  transform: translate(-50%, -50%);
+}
+
+.main2.show .data {
+  transform: translateY(0);
+}
+.main2 .textt1 {
+  width: 35%;
+  height: 40%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main2 .textt1 h1 {
+  color: rgb(181, 0, 0);
+}
+.main2 .textt1 h2 {
+  color: rgb(113, 103, 103);
+  font-size: medium;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+.main2 img {
+  width: 18%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main2 .bu {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 10;
+}
+.main2 .momo {
+  position: absolute;
+  right: 15%;
+  top: 5%;
+}
+.main2 .pizza {
+  position: absolute;
+  right: 15%;
+  top: 45%;
+  width: 15%;
+}
+.main2 .line {
+  width: 80%;
+  position: absolute;
+  left: -50%;
+  top: 10%;
+  z-index: 0;
+}
+.main2 .tomoto {
+  position: absolute;
+  bottom: 25%;
+  width: 5%;
+  z-index: 1;
+  left: 25%;
+}
+.main2 .patti {
+  width: 5%;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+.main2 .data {
+  width: 70%;
+  box-shadow: 0 0 1px black;
+  border-radius: 1em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 3em;
+  left: 13em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.main2 .data .res {
+  display: flex;
+}
+.main2 .data .citi {
+  display: flex;
+}
+.main2 .data .order {
+  display: flex;
+  position: relative;
+}
+.main2 .data .order img {
+  width: 30%;
+  position: absolute;
+}
+.main2 .data p {
+  font-size: small;
+  font-weight: 100;
+  padding-right: 2em;
+}
+.main2 .data img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main3 {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 192, 203, 0.59);
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
